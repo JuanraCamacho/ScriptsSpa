@@ -3,21 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # SQL Server Management Studio Solution File, Format Version 18.00
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "ScriptsSpa", "ScriptsSpa.ssmssqlproj", "{D0A5944D-459A-4318-A66C-BF0E3B6AE99A}"
-EndProject
-Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Usuario", "Usuario\Usuario.ssmssqlproj", "{08CD543B-E9EF-4098-A8B6-0FF0D308C109}"
-EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Catalogo", "Catalogo\Catalogo.ssmssqlproj", "{F51424BE-23D2-452F-A18C-56FF10EEB42B}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Procedimientos Almacenados", "Procedimientos Almacenados\Procedimientos Almacenados.ssmssqlproj", "{9063DF05-FA18-4CB2-82C2-6DA3E4B31902}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Funciones", "Funciones\Funciones.ssmssqlproj", "{8E0C26D4-C57A-48DF-8F33-61FDDDAFC1DC}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Tablas", "Tablas\Tablas.ssmssqlproj", "{1DB7F538-6EFA-41D8-96EF-FEBBB6075E7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D0A5944D-459A-4318-A66C-BF0E3B6AE99A}.Default|Default.ActiveCfg = Default
 		{D6ECB198-50EE-4902-8351-F8A71574FA44}.Default|Default.ActiveCfg = Default
-		{08CD543B-E9EF-4098-A8B6-0FF0D308C109}.Default|Default.ActiveCfg = Default
 		{F51424BE-23D2-452F-A18C-56FF10EEB42B}.Default|Default.ActiveCfg = Default
+		{9063DF05-FA18-4CB2-82C2-6DA3E4B31902}.Default|Default.ActiveCfg = Default
+		{8E0C26D4-C57A-48DF-8F33-61FDDDAFC1DC}.Default|Default.ActiveCfg = Default
+		{1DB7F538-6EFA-41D8-96EF-FEBBB6075E7C}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
