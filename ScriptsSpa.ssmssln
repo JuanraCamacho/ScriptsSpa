@@ -7,6 +7,8 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "ScriptsSpa", "ScriptsSpa.ss
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Catalogo", "..\Catalogo\Catalogo.ssmssqlproj", "{0E881BEB-9DA1-4088-A2EE-FEC8AC6B89ED}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Usuario", "Usuario\Usuario.ssmssqlproj", "{08CD543B-E9EF-4098-A8B6-0FF0D308C109}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
@@ -15,6 +17,7 @@ Global
 		{D0A5944D-459A-4318-A66C-BF0E3B6AE99A}.Default|Default.ActiveCfg = Default
 		{D6ECB198-50EE-4902-8351-F8A71574FA44}.Default|Default.ActiveCfg = Default
 		{0E881BEB-9DA1-4088-A2EE-FEC8AC6B89ED}.Default|Default.ActiveCfg = Default
+		{08CD543B-E9EF-4098-A8B6-0FF0D308C109}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
