@@ -1,1 +1,0 @@
-SELECT 'hola Mundo' Mundo
