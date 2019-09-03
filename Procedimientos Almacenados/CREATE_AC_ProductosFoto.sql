@@ -21,8 +21,7 @@ GO
 CREATE PROCEDURE [Catalogo].[SPCID_AC_ProductoFoto]
 	-- Add the parameters for the stored procedure here
 	--@Opcion	INT, -- opc 1 actualizar,  opc 2 crear
-	@Clave	INT,
-	@IdUsuario	INT,
+	@IdUsuario	UNIQUEIDENTIFIER,
 	@FotoBase64 VARCHAR(MAX),
 	@UrlLocalImagen NVARCHAR(300)
 	

@@ -5,8 +5,8 @@ CREATE TABLE [Catalogo].[TblProductoFoto](
 	[Activo] [BIT] NOT NULL,
 	[FechaAlta] [DATETIME] NOT NULL,
 	[FechaModificacion] [DATETIME] NOT NULL,
-	[UsuarioAlta] [INT] NOT NULL,
-	[UsuarioModifico] [INT] NOT NULL,
+	[UsuarioAlta] [UNIQUEIDENTIFIER] NOT NULL,
+	[UsuarioModifico] [UNIQUEIDENTIFIER] NOT NULL,
 	CONSTRAINT [PK_IdProductoFoto] PRIMARY KEY  ([IdProducto]),
 	CONSTRAINT [FK_IdProductoFoto] FOREIGN KEY  ([IdProducto]) REFERENCES [Catalogo].[TblProducto] ([IdProducto])
 )
