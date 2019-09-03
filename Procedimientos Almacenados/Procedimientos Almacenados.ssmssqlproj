@@ -32,10 +32,11 @@
           <FullPath>CREATE_AC_ProductosFoto.sql</FullPath>
         </FileNode>
         <FileNode Name="DELETE_Producto.sql">
+        <FileNode Name="CREATE_SPCID_AC_CategoriaProducto.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
           <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
-          <FullPath>DELETE_Producto.sql</FullPath>
+          <FullPath>CREATE_SPCID_AC_CategoriaProducto.sql</FullPath>
         </FileNode>
         <FileNode Name="Get_Producto.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
@@ -66,6 +67,47 @@
           <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
           <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
           <FullPath>SPCID_GetProveedor.sql</FullPath>
+        <FileNode Name="CREATE_SPCID_AC_Servicio.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_SPCID_AC_Servicio.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CREATE_SPCID_Delete_CategoriaProducto.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_SPCID_Delete_CategoriaProducto.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CREATE_SPCID_Delete_Servicio.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_SPCID_Delete_Servicio.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CREATE_SPCID_Get_CategoriaProducto.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_SPCID_Get_CategoriaProducto.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CREATE_SPCID_Get_ComboCategoria.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_SPCID_Get_ComboCategoria.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DELETE_Producto.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>DELETE_Producto.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GET_Producto.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>GET_Producto.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

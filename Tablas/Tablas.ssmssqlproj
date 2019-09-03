@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="CREATE_TblCategoriaProducto.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_TblCategoriaProducto.sql</FullPath>
+        </FileNode>
         <FileNode Name="CREATE_TblProducto.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
@@ -42,6 +48,30 @@
           <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
           <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
           <FullPath>CREATE_TblTurno.sql</FullPath>
+          </FileNode>
+        <FileNode Name="CREATE_TblServicio.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_TblServicio.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CREATE_TblServicioFoto.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_TblServicioFoto.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CREATE_TblTipoIva.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_TblTipoIva.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CREATE_TblTipoServicio.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:50.97.128.140:False:fincamo1_spa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>50.97.128.140</AssociatedConnSrvName>
+          <AssociatedConnUserName>fincamo1_spa</AssociatedConnUserName>
+          <FullPath>CREATE_TblTipoServicio.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

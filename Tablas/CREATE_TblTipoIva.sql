@@ -1,0 +1,27 @@
+USE [fincamo1_naturalwuane]
+GO
+
+/****** Object:  Table [Catalogo].[TblTipoIva]    Script Date: 03/09/2019 02:05:30 p.m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [Catalogo].[TblTipoIva](
+	[IdTipoIva] [INT] IDENTITY(1,1) NOT NULL,
+	[Porcentaje] [DECIMAL](4, 2) NOT NULL,
+	[Descripcion] [NVARCHAR](300) NOT NULL,
+	[FechaAlta] [DATETIME] NOT NULL,
+	[FechaModificacion] [DATETIME] NOT NULL,
+	[UsuarioAlta] [UNIQUEIDENTIFIER] NOT NULL,
+	[UsuarioModifico] [UNIQUEIDENTIFIER] NOT NULL,
+	[Activo] [BIT] NOT NULL,
+ CONSTRAINT [PK_TblTipoIva] PRIMARY KEY CLUSTERED 
+(
+	[IdTipoIva] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
