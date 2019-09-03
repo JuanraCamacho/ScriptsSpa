@@ -1,14 +1,6 @@
--- ================================================
--- Template generated from Template Explorer using:
--- Create Procedure (New Menu).SQL
---
--- Use the Specify Values for Template Parameters 
--- command (Ctrl-Shift-M) to fill in the parameter 
--- values below.
---
--- This block of comments will not be included in
--- the definition of the procedure.
--- ================================================
+USE [fincamo1_naturalwuane]
+GO
+/****** Object:  StoredProcedure [Catalogo].[SPCID_Get_ProductoXId]    Script Date: 21/08/2019 01:29:02 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -31,6 +23,7 @@ BEGIN
     -- Insert statements for procedure here
 	SELECT A.[IdProducto]
 		  ,CP.[Nombre]
+		  ,[Clave]
 		  ,A.[Nombre]
 		  ,A.[Descripcion]
 		  ,[Stock]
@@ -52,5 +45,3 @@ BEGIN
 
 
 END
-GO
---exec [Catalogo].[SPCID_Get_ProductoXId] 1

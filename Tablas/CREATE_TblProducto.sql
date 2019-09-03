@@ -1,7 +1,6 @@
 CREATE TABLE [Catalogo].[TblProducto](
 	[IdProducto] [INT] IDENTITY(1,1) NOT NULL, 
 	[IdCategoriaProducto] [INT] NOT NULL,
-	[Clave] [INT] NOT NULL,
 	[Nombre] [NVARCHAR](200) NOT NULL,
 	[Descripcion] [NVARCHAR](300) NOT NULL,
 	[Stock] [BIT] NULL,
@@ -10,18 +9,19 @@ CREATE TABLE [Catalogo].[TblProducto](
 	[PrecioPublico][MONEY] NOT NULL,
 	[PrecioMayoreo][MONEY] NOT NULL,
 	[PrecioMenudeo][MONEY] NOT NULL,
-	[CodigoBarras] [INT] NOT NULL,
-	[UnidadMedida] [NVARCHAR](50) NOT NULL,
+	[CodigoBarras] [NVARCHAR](50) NOT NULL,
+	[UnidadMedida] [INT] NOT NULL,
 	[ClaveSat] [INT] NULL,
 	[AplicaIva] [BIT] NULL,
 	[IEPS] [BIT] NULL,
 	[Activo] [BIT] NOT NULL,
 	[FechaAlta] [DATETIME] NOT NULL,
 	[FechaModificacion] [DATETIME] NOT NULL,
-	[UsuarioAlta] [INT] NOT NULL,
-	[UsuarioModifico] [INT] NOT NULL,
+	[UsuarioAlta] [UNIQUEIDENTIFIER] NOT NULL,
+	[UsuarioModifico] [UNIQUEIDENTIFIER] NOT NULL,
 	CONSTRAINT [PK_Producto_IdProducto] PRIMARY KEY  ([IdProducto]),
-	CONSTRAINT [FK_Producto_CategoriaFK] FOREIGN KEY  ([IdCategoriaProducto]) REFERENCES [Catalogo].[TblCategoriaProducto] ([IdCategoriaProducto])
+	CONSTRAINT [FK_Producto_CategoriaFK] FOREIGN KEY  ([IdCategoriaProducto]) REFERENCES [Catalogo].[TblCategoriaProducto] ([IdCategoriaProducto]),
+	CONSTRAINT [FK_Producto_UnidadMedida] FOREIGN KEY  ([UnidadMedida]) REFERENCES [Catalogo].[TblUnidadMedida] ([IdUnidaMedida])
 )
 
 ALTER TABLE [Catalogo].[TblProducto] ADD CONSTRAINT [CT_TblProducto_FechaModificacion] DEFAULT ([dbo].[FnGetCurrentDate]()) FOR [FechaModificacion]

@@ -1,14 +1,6 @@
--- ================================================
--- Template generated from Template Explorer using:
--- Create Procedure (New Menu).SQL
---
--- Use the Specify Values for Template Parameters 
--- command (Ctrl-Shift-M) to fill in the parameter 
--- values below.
---
--- This block of comments will not be included in
--- the definition of the procedure.
--- ================================================
+USE [fincamo1_naturalwuane]
+GO
+/****** Object:  StoredProcedure [Catalogo].[SPCID_AC_Producto]    Script Date: 27/08/2019 11:51:54 a. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -23,7 +15,6 @@ ALTER PROCEDURE [Catalogo].[SPCID_AC_Producto]
 	@Opcion			 INT,--Opcion=1 Alta, opcion 2= Cambios
 	@IdProducto		 INT,
 	@Categoria		 INT,
-	@Clave			 INT,
 	@Nombre			 NVARCHAR(200),
 	@Descripcion	 NVARCHAR(300),
 	@Stock			 BIT,
@@ -32,13 +23,13 @@ ALTER PROCEDURE [Catalogo].[SPCID_AC_Producto]
 	@PrecioPublico   MONEY,
 	@PrecioMayoreo   MONEY,
 	@PrecioMenudeo   MONEY,
-	@CodigoBarras	 INT,
-	@UnidadMedida	 NVARCHAR(50),
+	@CodigoBarras	 NVARCHAR(50),
+	@UnidadMedida	 INT,
 	@ClaveSat		 INT,
 	@AplicaIva		 BIT,
 	--@IEPS			 BIT,
-	@Activo			 BIT,
-	@Usuario	     INT
+	--@Activo			 BIT,
+	@Usuario	     UNIQUEIDENTIFIER
 
 AS
 BEGIN
@@ -53,7 +44,6 @@ BEGIN
 			BEGIN
 				INSERT INTO [Catalogo].[TblProducto](
 							[IdCategoriaProducto],
-							[Clave],
 							[Nombre],
 							[Descripcion],
 							[Stock],
@@ -70,7 +60,6 @@ BEGIN
 							[UsuarioModifico])
 					VALUES (
 							@Categoria,
-							@Clave,
 							@Nombre,
 							@Descripcion,
 							@Stock,
@@ -98,7 +87,6 @@ BEGIN
 		BEGIN
 			UPDATE	[Catalogo].[TblProducto]
 			SET		[IdCategoriaProducto]=@Categoria,
-					[Clave]=@Clave,
 					[Nombre]=@Nombre,
 					[Descripcion]=@Descripcion,
 					[Stock]=@Stock,
@@ -123,6 +111,5 @@ BEGIN
 	END
 END
 
-GO
 
 --exec [Catalogo].[SPCID_AC_Producto] 2,3,1,15,'testnom3','testdesc',1,50,10,20,30,40,4687,'kilo',79989,1,1,1
